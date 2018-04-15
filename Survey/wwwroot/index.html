@@ -1,0 +1,85 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Survey </title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+</head>
+<body>
+
+    <div class="container">
+        <h2>Survey App</h2>
+        <div id="surveyConteiner">
+            <div id="newSurvey">
+                <button id="newSurveyBtn" class="btn btn-success newSurveyBtns">New </button>
+                <button id="backNewSurveyBtn" class="btn btn-success newSurveyBtns hidden">Back </button>
+                <button id="backTakeSurveyBtn" class="btn btn-success hidden">Back </button>
+                <hr />
+                <form id="newSurveyForm" class="hidden formMiddle">
+                    <label for="name">Name: </label>
+                    <input class="form-control" type="text" name="name" />
+
+                    <fieldset name="questions" id="questions"></fieldset>
+                    <br />
+                    <button type="button" id="newQuestionBtn" class="btn btn-success glyphicon-plus" icon="plus">New qest</button>
+                    <br />
+                    <br />
+                    <button id="submitNewBtn" class="btn btn-noraml glyphicon-save" type="submit">Save</button>
+                </form>
+
+            </div>
+
+            <div id="survey" class="hidden">
+                <form id="surveyForm" class=" formMiddle">
+                    <label for="name">Name: </label>
+                    <input id="surveyName" class="form-control " type="text" disabled />
+
+                    <fieldset name="surveyQuestions" id="surveyQuestions"></fieldset>
+                    <br />
+                    <button id="submitBtn" class="btn btn-noraml glyphicon-save" type="submit">Save</button>
+
+                </form>
+            </div>
+
+            <div id="surveyCarousel" class="carousel slide" data-ride="carousel">
+
+                <ol class="carousel-indicators"></ol>
+                <div class="carousel-inner">
+
+                </div>
+                <!-- Left and right controls -->
+                <a class="left carousel-control" href="#surveyCarousel" data-slide="prev">
+                    <span class="glyphicon glyphicon-chevron-left"></span>
+                    <span class="sr-only">Previous</span>
+                </a>
+                <a class="right carousel-control" href="#surveyCarousel" data-slide="next">
+                    <span class="glyphicon glyphicon-chevron-right"></span>
+                    <span class="sr-only">Next</span>
+                </a>
+            </div>
+        </div>
+        <div id="statsContainer" class="hidden">
+            <button id="backStatsBtn" class="btn btn-noraml ">Back </button>
+            <hr />
+            <div id="chartConteiner">
+                
+            </div>
+        </div>
+    </div>
+    <link href="/site.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.8.3/underscore-min.js"></script>
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+
+    <script src="/js/plugins/eventemitter2.js"></script>
+    <script src="/js/plugins/jquery.serializejson.min.js"></script>
+    <script src="/js/app.js"></script>
+    <script src="/js/service.js"></script>
+    <script src="/js/carousel.js"></script>
+    <script src="/js/survey.js"></script>
+    <script src="/js/surveyQuestion.js"></script>
+    <script src="/js/stats.js"></script>
+</body>
+</html>

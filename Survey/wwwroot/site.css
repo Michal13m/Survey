@@ -1,0 +1,21 @@
+﻿
+
+.formMiddle {
+    text-align: center;
+    margin-left: 25%;
+    margin-right: 25%;
+}
+
+.slide{
+    height:50%;
+}
+
+
+.caruselItem{
+    margin-top:10%;
+    margin-bottom:10%;
+}
+
+#surveyQuestions > div{
+    margin-top:20px;
+}
